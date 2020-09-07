@@ -37,8 +37,8 @@ print('merged array=',mergesorted(array1,array2))
 
 #n= no. of items in array a
 #m= no. of items in array b
-# therefore, complexity till print stmt = O(n+m)
-#k= remaining items iteration from largest array i.e. line which contains slicing
+# therefore, complexity till line 28 = O(n+m)
+#k= remaining items iteration from largest array i.e. line 30
 # therefore overall complecity = O(n+m+k)
 
 
