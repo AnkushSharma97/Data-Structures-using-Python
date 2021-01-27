@@ -95,6 +95,33 @@ queue.enqueue(70)
 queue.display()
 
 
+'''Note:-
+Although we have implemented simple queue here but it behaves as circular
+queue. Because once it is full and if we delete some item and then we
+add more items to it then we are not gettting any overflow error here.'''
+
+'''Best Approach =
+In case of enqueue:
+    if enqueue_stack is full():
+        display overflow
+    else:
+        Push element to enqueue_stack
+In case of dequeue:
+    if  both stacks empty:
+        display underflow
+    else if dequeue_stack is not empty:
+        return(dequeue_stack.pop())
+    else:
+        while enqueue_stack is not empty:
+            dequeue_stack.push(enqueue_stack.pop())
+        return(dequeue_stack.pop())
+
+
+but using this approach we may face some issues in diplaying elements in
+proper order. So if order does not matter for displayig the elements then
+this approach is best'''
+
+
 
 
 
