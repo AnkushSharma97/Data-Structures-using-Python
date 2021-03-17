@@ -8,6 +8,7 @@ Access the Data structures in following sequence to understand them better:-
 3) [Linked Lists](https://github.com/AnkushSharma97/Data-Structures-using-Python/tree/master/DS-LinkedList)  
 4) [Stacks](https://github.com/AnkushSharma97/Data-Structures-using-Python/tree/master/DS-Stack)  
 5) [Queue](https://github.com/AnkushSharma97/Data-Structures-using-Python/tree/master/DS-Queue)  
+6) [Tree](https://github.com/AnkushSharma97/Data-Structures-using-Python/tree/master/DS-Tree)
   
 Algorithms:-  
   
