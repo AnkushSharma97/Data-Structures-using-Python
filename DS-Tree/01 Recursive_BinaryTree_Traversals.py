@@ -31,6 +31,7 @@ class BinaryTree:
     def levelorder(self,root):
         from collections import deque #using internal deque or else we 
         queu=deque()                  #can implement our own queue as well
+        queu.append(root)
         while len(queu)!=0:
             element=queu.popleft()
             print(element.info,end=" ")
