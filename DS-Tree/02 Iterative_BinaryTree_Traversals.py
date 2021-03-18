@@ -72,6 +72,7 @@ class BinaryTree:
     def levelorder(self,root):
         from collections import deque #using internal deque or else we 
         queu=deque()                  #can implement our own queue as well
+        queu.append(root)
         while len(queu)!=0:
             element=queu.popleft()
             print(element.info,end=" ")
@@ -93,7 +94,7 @@ class BinaryTree:
 '''
 root=Btnode('A') #root node as root
 root.left_child=Btnode('B')
-#root.right_child=Btnode('C')
+root.right_child=Btnode('C')
 root.left_child.left_child=Btnode('D')
 root.left_child.right_child=Btnode('E')
 root.left_child.right_child.left_child=Btnode('F')
