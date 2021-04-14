@@ -69,7 +69,7 @@ class BinaryTree:
                     else:       
                         stack.append(current)
                         
-    def postorder_way0(self,root):
+    def postorder_way1(self,root):
         stack=[]
         current=root
         last_visited=None
