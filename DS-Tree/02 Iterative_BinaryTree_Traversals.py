@@ -35,7 +35,7 @@ class BinaryTree:
             else:
                 break
 
-    def postorder(self,root):
+    def postorder_way0(self,root):
         current=root
         stack=[]
         stack.append(current)
@@ -68,6 +68,34 @@ class BinaryTree:
                             current=None
                     else:       
                         stack.append(current)
+                        
+    def postorder_way0(self,root):
+        stack=[]
+        current=root
+        last_visited=None
+
+        while True:
+            if current!=None:
+                stack.append(current)
+                current=current.left_child
+            elif len(stack)!=0:
+                current=stack.pop()
+                if current.right_child!=None:
+                    
+                    if current.right_child==last_visited:
+                        last_visited=current
+                        print(current.info,end=" ")
+                        current=None
+                    else:
+                        stack.append(current)
+                        current=current.right_child
+                else:
+                    last_visited=current
+                    print(current.info,end=" ")
+                    current=None
+            else:
+                break
+
 
     def levelorder(self,root):
         from collections import deque #using internal deque or else we 
